@@ -1,0 +1,158 @@
+body {
+	background: #222f3e;
+}
+
+.container{
+	position:absolute;
+	top:10%;
+	left: 20%;
+	margin-bottom: 5%;
+	right: 20%;
+	width: 60vw;
+	height: 80vh;
+	background: var( --main-color);
+	border-radius: 5px;
+	font-family:"dancing script",cursive;
+	color: #797d7f;
+	letter-spacing: 0.5px;
+	display: grid;
+	place-items: center;
+	background-color:#4169E1;
+	overflow: hidden;
+
+
+}
+.inner{
+	position: absolute;
+	height: 100%;
+	width: 80%;
+	opacity: 1;
+	-webkit-transition:1s;
+	transition: 1s;
+
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: 70%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	background: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+	font-size: 25px;
+	overflow: hidden;
+}
+.number::before{
+	content:"";
+	position: absolute;
+	top: -130px;
+	right: -30px;
+	width: 90px;
+	height: 200px;
+	background: var(--secondary-color);
+	-webkit-transform:rotate(-45deg);
+	transform: rotate(-45deg);
+	z-index: -1;
+	box-shadow: 0 0 0.7rem rgba(0,0,0,0.5);
+	background-color: #B0E0E6;
+
+
+}
+.number{
+	font-family: var(--sans);
+	position: absolute;
+	margin: 0;
+	top: 15px;
+right: 15px;
+color: rgba(255,255,255,0.7);
+
+}
+.number img{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -25px;
+	top: -7px;
+	cursor: pointer;
+	animation: rot 1s linear;
+
+
+}
+.number:hover img{
+	animation: rot is linear;
+
+}
+@keyframes rot{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+ .quote{
+ 	position:absolute;
+ 	top: 35%;
+ 	left: 70%;
+ 	-webkit-transform:translate(-50%,-50%);
+
+
+ }
+@media(max-width: 1280px){
+	.text{
+		font-size: 80%;
+	}
+	.button{
+		font-size: 80%;
+	}
+	
+}
+
+@media(max-width: 998px){
+	.text{
+		font-size: 80%;
+	}
+	.button{
+		font-size: 80%;
+	}
+	
+}
+@media(max-width: 768px){
+	.text{
+		font-size: 65%;
+	}
+	.button{
+		font-size: 65%;
+	}
+}
+@media(max-width: 500px)
+{
+	.text{
+		font-size: 55%;
+	}
+	.number::before{
+		top: -80px;
+	right: -10px;
+	width: 50px;
+	height: 100px;
+	}
+	.number img{
+		width: 30px;
+	height: 30px;
+	left: -10px;
+	right: 4px;
+
+	}
+	.button{
+		font-size: 55%;
+		
+	}
+}
+
+
+
+
